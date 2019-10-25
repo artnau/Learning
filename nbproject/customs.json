@@ -1,0 +1,11 @@
+{
+    "elements": {},
+    "attributes": {
+        "size": {
+            "context": "input"
+        },
+        "vidth": {
+            "context": "img"
+        }
+    }
+}

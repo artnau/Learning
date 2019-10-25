@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<!-- MVC. Шаблон гостевой книги. -->
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Гостевая книга</title>
+    </head>
+    <body>
+        <h2>Добавьте свое сообщение:</h2>
+        <form action= 'mvc.controller.php' method= 'post'>
+            Ваше имя: <input type = text name = 'new [name]'><br>
+            Комментарий:<br>
+            <textarea name = 'new[text]' cols='60' rows='5'></textarea><br>
+            <input type ='submit' name='doAdd' value='Добавить'>
+        </form>
+        <h2>Гостевая книга:</h2>
+        <?foreach ($Book as $id=$e) {?>
+        Имя человека: <?=$e['name']?><br>
+        Его комментарий:<br> <?=nl2br($e['text'])?><hr>
+        <?}?>
+    </body>
+</html>

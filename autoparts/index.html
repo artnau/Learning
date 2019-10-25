@@ -1,0 +1,67 @@
+    <!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Атозапчасти</title>
+<style>
+   table {
+    width: 450px; /* Ширина таблицы */
+    border: 1.5px solid red; /* Рамка вокруг таблицы */
+    margin: auto; /* Выравниваем таблицу по центру окна  */
+   }
+   td {
+    text-align: center; /* Выравниваем текст по центру ячейки */
+   }
+  </style>
+</head>
+<body>
+     <header>
+    <h1 align='center' style= 'color:blue'>Добро пожаловать в магазин 
+        "Автозапчасти"</h1>
+    <h2 align='center' style= 'color:rosybrown'>Форма заказа</h2>
+  </header>
+<form action = 'processorder.php' method=post>
+    <table border = "0">
+        <tr bgcolor = "#F8E116">
+            <td width = "150">Товар</td>
+            <td width = "15">Количество</td>
+        </tr>
+        <tr>
+            <td>Атопокрышки</td>
+            <td align="center"><input type="text" name="tireqty" size="3"
+                                        maxlenght="3"></td>
+        </tr>
+        <tr>
+            <td>Машинное масло</td>
+            <td align="center"><input type="text" name="oilqty" size="3"
+                                        maxlenght="3"></td>
+        </tr>
+        <tr>
+            <td>Свечи зажигания</td>
+            <td align="center"><input type="text" name="sparkqty" size="3"
+                                        maxlenght="3"></td>
+        </tr>
+        <tr>
+            <td>Как вы нашли компанию "Автозапчасти?"</td>
+            <td><select name='find'>
+                    <option value = 'a'>Я регулярный клиент</option>
+                    <option value = 'b'>В телерекламе</option>
+                    <option value = 'c'>В справочнике</option>
+                    <option value = 'd'>В интернете</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Адрес доставки</td>
+            <td align="center"><input type="text" name='address' size='18'
+                                        maxlenght='50'td>
+        </tr>
+        <tr>
+            <td colspan = '2' align = 'center'><input type = 'submit'
+                                                      value = 'Отправить заказ'>
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
